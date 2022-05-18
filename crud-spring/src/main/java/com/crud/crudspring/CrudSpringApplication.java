@@ -1,5 +1,8 @@
 package com.crud.crudspring;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.crud.crudspring.model.Course;
 import com.crud.crudspring.repository.CourseRepository;
 import org.springframework.boot.CommandLineRunner;
@@ -18,11 +21,21 @@ public class CrudSpringApplication {
     CommandLineRunner initDatabase(CourseRepository courseRepository){
         return args -> {
             courseRepository.deleteAll();
-            Course c = new Course();
+            List <Course> courses = new ArrayList<>();
+            Course c = new Course();        
+
             c.setName("Angular com Spring");
             c.setCategory("front-end");
 
-            courseRepository.save(c);
+            Course d = new Course();            
+            d.setName("Angular com Spring");
+            d.setCategory("back-end");
+
+            courses.add(c);
+            courses.add(d);
+
+
+            courseRepository.saveAll(courses);            
         };
     }
 
