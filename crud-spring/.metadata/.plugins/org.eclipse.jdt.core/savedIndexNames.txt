@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+/home/home/Documentos/AndreMatos28/crud-angular-spring/crud-spring/.metadata/.plugins/org.eclipse.jdt.core
+1628771524.index

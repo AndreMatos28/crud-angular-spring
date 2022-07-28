@@ -5,7 +5,8 @@ import lombok.Data;
 import javax.persistence.*;
 
 
-@Data   //lombok para @ToString, @EqualsAndHashCode, @Getter / @Setter
+   //lombok para @ToString, @EqualsAndHashCode, @Getter / @Setter
+@Data
 @Entity
 public class Course {
 
